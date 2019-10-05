@@ -6,7 +6,7 @@
 /*   By: mriley <mriley@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/20 18:54:13 by mriley            #+#    #+#             */
-/*   Updated: 2019/05/12 18:19:52 by mriley           ###   ########.fr       */
+/*   Updated: 2019/10/05 21:08:28 by mriley           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,15 @@
 # include <string.h>
 # include <unistd.h>
 # include "libft/libft.h"
+#include <stdlib.h>
+#include <fcntl.h>	/* open() and O_XXX flags */
+#include <sys/stat.h>	/* S_IXXX flags */
+#include <sys/types.h>	/* mode_t */
+#include <unistd.h>	/* close() */
+#include <stdlib.h>
+#include <stdio.h>
 
-# define BUFF_SIZE 32
+# define BUFF_SIZE 1
 
 int get_next_line(const int fd, char **line);
 #endif
